@@ -1,0 +1,27 @@
+.productL-div {
+  margin: 10px;
+}
+.productL-div .productL-box {
+  width: 47vw;
+  height: 18vw;
+  display: block;
+  overflow: hidden;
+  border-radius: 1.5rem;
+}
+.productL-div .productL-box img {
+  object-fit: cover;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s ease-in;
+}
+.productL-div .productL-box img:hover {
+  transform: scale(1.03);
+  -webkit-filter: brightness(90%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}

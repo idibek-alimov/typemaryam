@@ -1,0 +1,30 @@
+.logo {
+  position: relative;
+  margin-left: 1%;
+  margin-top: -10px;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 200;
+  padding-bottom: -5px;
+  height: min-content;
+  line-height: 50%;
+
+  color: #ffffff;
+}
+.logo:hover {
+  border-radius: 2px;
+  border: 1px solid white;
+}
+.logo .logo-link {
+  text-decoration: none;
+  text-decoration-line: none;
+  text-decoration-color: none;
+  color: #ffffff;
+}
+@media only screen and (max-width: 600px) {
+  .logo {
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0 0 15px 10px;
+  }
+}

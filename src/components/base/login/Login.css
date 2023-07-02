@@ -1,0 +1,15 @@
+.login-div {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.login-div .login-button {
+  color: white;
+  font-size: 2rem;
+  margin-top: -8px;
+}
+.login-div span {
+  margin-top: -3px;
+  font-size: 1rem;
+  color: white;
+}

@@ -1,0 +1,27 @@
+.productR-div {
+  margin: 15px;
+}
+.productR-div .productR-box {
+  width: 22vw;
+  height: 17vw;
+  display: block;
+  overflow: hidden;
+  border-radius: 1.5rem;
+}
+.productR-div .productR-box img {
+  object-fit: cover;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s ease-in;
+}
+.productR-div .productR-box img:hover {
+  transform: scale(1.03);
+  -webkit-filter: brightness(90%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}

@@ -1,0 +1,243 @@
+.profile-detail-div {
+  font-family: system, -apple-system, BlinkMacSystemFont, "Segoe UI", "Segoe WP",
+    Roboto, Ubuntu, Oxygen, Cantarell, "Fira Sans", "Helvetica Neue", Helvetica,
+    "Lucida Grande", "Droid Sans", Tahoma, "Microsoft Sans Serif", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-detail-div .profile-detail-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 90%;
+  height: 90%;
+}
+.profile-detail-div .profile-detail-box .personal-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 40%;
+  border: 1px solid rgb(244, 239, 239);
+  border-radius: 15px;
+  box-shadow: rgb(244, 241, 241) 0px 0px 10px 10px;
+}
+.profile-detail-box .info-top {
+  display: flex;
+
+  flex-direction: row;
+  align-items: center;
+  max-width: 30%;
+  width: 20%;
+  justify-content: space-between;
+  margin: 4% 0 4% 4%;
+}
+.name-edit-icon {
+  cursor: pointer;
+  margin-left: 5px;
+  color: rebeccapurple;
+  font-size: 20px;
+}
+.personal-info .bottom-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.profile-detail-box .info-bottom {
+  display: flex;
+  width: 80%;
+  min-width: 700px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 0 4%;
+}
+.gender-box {
+  width: 170px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.gender-box .gender-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.gender-box .gender-item span {
+  padding-top: 4px;
+}
+.gender-choose {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+}
+.profile-detail-div .profile-detail-box .personal-info .info-top .profile-pic {
+  width: 85px;
+  height: 85px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+.profile-detail-div
+  .profile-detail-box
+  .personal-info
+  .info-top
+  .info-username {
+  color: #242424;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: system, -apple-system, BlinkMacSystemFont, "Segoe UI", "Segoe WP",
+    Roboto, Ubuntu, Oxygen, Cantarell, "Fira Sans", "Helvetica Neue", Helvetica,
+    "Lucida Grande", "Droid Sans", Tahoma, "Microsoft Sans Serif", sans-serif;
+}
+.profile-detail-box .info-bottom .bottom-item {
+  font-family: system, -apple-system, BlinkMacSystemFont, "Segoe UI", "Segoe WP",
+    Roboto, Ubuntu, Oxygen, Cantarell, "Fira Sans", "Helvetica Neue", Helvetica,
+    "Lucida Grande", "Droid Sans", Tahoma, "Microsoft Sans Serif", sans-serif;
+}
+.profile-detail-box .info-bottom .bottom-item span {
+  color: grey;
+}
+.profile-detail-box .info-bottom .bottom-item div {
+  display: flex;
+  flex-direction: row;
+}
+.profile-detail-box .delete-accaunt {
+  margin: 5% 0 0 0;
+  height: 30%;
+  min-height: 30%;
+  width: 100%;
+  border: 1px solid rgb(240, 235, 235);
+  box-shadow: #f4f0f0 0px 0px 10px 10px;
+  border-radius: 15px;
+  /* background-color: rebeccapurple; */
+}
+.profile-detail-box .delete-accaunt .info-top {
+  color: #242424;
+  height: 0;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: system, -apple-system, BlinkMacSystemFont, "Segoe UI", "Segoe WP",
+    Roboto, Ubuntu, Oxygen, Cantarell, "Fira Sans", "Helvetica Neue", Helvetica,
+    "Lucida Grande", "Droid Sans", Tahoma, "Microsoft Sans Serif", sans-serif;
+}
+.profile-detail-box .delete-accaunt .info-bottom {
+  height: 40%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.profile-detail-box .delete-accaunt .info-bottom span {
+  color: grey;
+}
+.profile-detail-box .delete-accaunt .info-bottom div {
+  cursor: pointer;
+  color: rebeccapurple;
+  font-weight: 700;
+  font-family: system, -apple-system, BlinkMacSystemFont, "Segoe UI", "Segoe WP",
+    Roboto, Ubuntu, Oxygen, Cantarell, "Fira Sans", "Helvetica Neue", Helvetica,
+    "Lucida Grande", "Droid Sans", Tahoma, "Microsoft Sans Serif", sans-serif;
+}
+.gender-highlight {
+  background-color: red;
+}
+.back-grey {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  background-color: #242424;
+}
+#show {
+  display: block;
+}
+.profile-detail-div .name-change-box {
+  background-color: yellow;
+  color: green;
+}
+
+@media only screen and (max-width: 600px) {
+  .profile-detail-div {
+    background-color: white;
+    width: 100vw;
+    min-height: fit-content;
+    height: 100vh;
+  }
+  .profile-detail-div .profile-detail-box {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+  .profile-detail-div .profile-detail-box .personal-info {
+    border-radius: 0;
+    height: 50vh;
+    min-height: fit-content;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    box-shadow: none;
+    border: none;
+  }
+  .profile-detail-div .profile-detail-box .personal-info .info-top {
+    background-color: white;
+  }
+
+  .profile-detail-div .profile-detail-box .personal-info .info-bottom {
+    width: 100% !important;
+    min-width: fit-content !important;
+    display: flex;
+
+    flex-direction: column !important;
+    align-items: flex-start;
+    height: 60%;
+    padding: 0 0 0 10px;
+    margin: 0;
+    min-width: fit-content !important;
+    max-width: fit-content !important;
+    justify-content: space-around !important;
+    background-color: white;
+  }
+  .profile-detail-div .profile-detail-box .the-line {
+    width: 90%;
+    height: 1px;
+    border-top: 1px solid rgb(233, 225, 225);
+  }
+
+  .profile-detail-div .profile-detail-box .delete-accaunt {
+    border-radius: 0;
+    width: 100% !important;
+    background-color: white;
+    box-shadow: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  .profile-detail-div .profile-detail-box .delete-accaunt .info-top {
+    font-size: 20px;
+    width: fit-content !important;
+    min-width: fit-content !important;
+    margin: 0;
+    height: fit-content;
+    padding: 10px;
+    background-color: white;
+  }
+  .profile-detail-div .profile-detail-box .delete-accaunt .info-bottom {
+    width: fit-content !important;
+    min-width: fit-content !important;
+    background-color: white;
+    margin: 0;
+    padding: 10px;
+  }
+}

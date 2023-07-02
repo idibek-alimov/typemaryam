@@ -1,0 +1,314 @@
+.profile-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.profile-box {
+  width: 90%;
+  margin: 5% 5% 0 5%;
+}
+.profile-div .top-location {
+  font-size: 18px;
+}
+.order-item-list-box {
+  display: flex;
+  flex-direction: column;
+}
+.order-item-element {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+.profile-box .profile-boxes-box {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 40vh;
+  min-height: 40vh;
+}
+.profile-box .profile-shadow-hover {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1%;
+  margin: 1%;
+  border: 1px solid rgb(234, 229, 229);
+  width: 30%;
+  height: 70%;
+  min-height: 60%;
+  border-radius: 10px;
+  box-shadow: rgb(240, 237, 237) 0px 2px 5px 5px;
+  transition: all 0.1s ease-in;
+}
+.profile-box .profile-shadow-hover:hover {
+  box-shadow: rgb(240, 237, 237) 0px 7px 10px 10px;
+}
+
+.profile-box .deliveries-box {
+  background-image: linear-gradient(94.18deg, #fae1f3 0.59%, #d9f1ff 98.87%);
+}
+.profile-box .personal-info-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.profile-box .personal-info-top {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 60%;
+  margin: 1%;
+}
+.profile-box .personal-info-box .personal-info-top .profile-pic {
+  margin-right: 2%;
+  margin-top: 0;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+.profile-box .personal-info-box .personal-info-top .profile-username {
+  font-size: 20px;
+  line-height: 28px;
+  transition: color 0.3s ease 0s;
+  color: #242424;
+  font-weight: 700;
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: system, -apple-system, BlinkMacSystemFont, "Segoe UI", "Segoe WP",
+    Roboto, Ubuntu, Oxygen, Cantarell, "Fira Sans", "Helvetica Neue", Helvetica,
+    "Lucida Grande", "Droid Sans", Tahoma, "Microsoft Sans Serif", sans-serif;
+}
+.profile-box .profile-shadow-hover:hover .profile-username {
+  color: #2c84d4;
+}
+
+.profile-box .personal-info-box .personal-info-bottom {
+  margin-top: 10px;
+}
+.profile-box .personal-info-box .little-screen-phone {
+  display: none;
+}
+.profile-box .personal-info-box .personal-info-bottom span {
+  color: #b1becd;
+}
+.profile-box .personal-info-box .personal-info-bottom span span {
+  color: #242424;
+}
+.profile-box .delivery-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid white;
+  border-radius: 100%;
+  margin: 0px 20px 0px 0px;
+  width: 70px;
+  height: 70px;
+}
+.profile-box .delivery-text {
+  font-size: 20px;
+  line-height: 28px;
+  transition: color 0.3s ease 0s;
+  color: #242424;
+  font-weight: 700;
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: system, -apple-system, BlinkMacSystemFont, "Segoe UI", "Segoe WP",
+    Roboto, Ubuntu, Oxygen, Cantarell, "Fira Sans", "Helvetica Neue", Helvetica,
+    "Lucida Grande", "Droid Sans", Tahoma, "Microsoft Sans Serif", sans-serif;
+}
+.profile-box .deliveries-box .personal-info-bottom {
+  margin-top: 10px;
+}
+.profile-box .deliveries-box .next {
+  color: grey;
+}
+.profile-box .deliveries-box .next .time {
+  color: #242424;
+}
+.profile-box .deliveries-box:hover .delivery-text {
+  color: #2c84d4;
+}
+.profile-box .discount-number {
+  font-family: system, -apple-system, BlinkMacSystemFont, "Segoe UI", "Segoe WP",
+    Roboto, Ubuntu, Oxygen, Cantarell, "Fira Sans", "Helvetica Neue", Helvetica,
+    "Lucida Grande", "Droid Sans", Tahoma, "Microsoft Sans Serif", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #2c84d4;
+}
+.profile-box .discount-text {
+  font-family: system, -apple-system, BlinkMacSystemFont, "Segoe UI", "Segoe WP",
+    Roboto, Ubuntu, Oxygen, Cantarell, "Fira Sans", "Helvetica Neue", Helvetica,
+    "Lucida Grande", "Droid Sans", Tahoma, "Microsoft Sans Serif", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #242424;
+}
+.profile-box .discount-number-box {
+  border: 3px solid rgb(232, 225, 225);
+}
+.profile-box .discount-box:hover .discount-text {
+  color: #2c84d4;
+}
+
+.profile-div .like-and-purchase-box {
+  margin: 0% 5% 0% 5%;
+  width: 88%;
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.profile-div .like-and-purchase-box .like-and-purchase-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 48%;
+  height: 180px;
+  border-radius: 10px;
+  border: 1px solid rgb(244, 239, 239);
+  box-shadow: rgb(240, 237, 237) 0px 2px 5px 5px;
+  transition: all 0.1s ease-in;
+}
+.profile-div .like-and-purchase-box .like-and-purchase-item:hover {
+  box-shadow: rgb(240, 237, 237) 0px 7px 10px 10px;
+}
+
+.profile-div
+  .like-and-purchase-box
+  .like-and-purchase-item
+  .like-and-purchase-item-top {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  margin-left: 10%;
+  width: 100%;
+  color: #242424;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: system, -apple-system, BlinkMacSystemFont, "Segoe UI", "Segoe WP",
+    Roboto, Ubuntu, Oxygen, Cantarell, "Fira Sans", "Helvetica Neue", Helvetica,
+    "Lucida Grande", "Droid Sans", Tahoma, "Microsoft Sans Serif", sans-serif;
+}
+.profile-div
+  .like-and-purchase-box
+  .like-and-purchase-item
+  .like-and-purchase-item-bottom {
+  display: flex;
+  height: 50%;
+  width: 100%;
+  align-items: stretch;
+  justify-content: stretch;
+  padding-left: 10%;
+}
+.profile-div
+  .like-and-purchase-box
+  .like-and-purchase-item
+  .like-and-purchase-item-img {
+  object-fit: contain;
+  width: 60px;
+  height: 60px;
+  border: 1px solid rgb(226, 219, 219);
+  border-radius: 100%;
+}
+@media only screen and (max-width: 600px) {
+  .profile-box .profile-boxes-box {
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 35vh;
+    width: 100%;
+  }
+  .profile-box .profile-boxes-box .profile-shadow-hover {
+    display: flex;
+    height: 16vh;
+    min-height: 16vh;
+    width: 100%;
+  }
+  .profile-box .profile-boxes-box .personal-info-box {
+    border: none;
+    box-shadow: none;
+  }
+  .profile-box .personal-info-box .little-screen-phone {
+    display: flex;
+    flex-direction: column;
+  }
+  .profile-box
+    .personal-info-box
+    .little-screen-phone
+    .little-screen-phone-text {
+    font-size: 15px;
+    font-weight: 400;
+    color: grey;
+  }
+  .profile-box .profile-boxes-box .personal-info-box .personal-info-bottom {
+    display: none;
+  }
+  .profile-box .profile-boxes-box .personal-info-box .profile-pic {
+    width: 80px;
+    height: 80px;
+  }
+  .profile-box .profile-boxes-box .personal-info-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .profile-box .profile-boxes-box .deliveries-box .personal-info-top {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .profile-box
+    .profile-boxes-box
+    .deliveries-box
+    .personal-info-top
+    .delivery-svg {
+    width: 40px;
+    height: 40px;
+    padding: 2px;
+  }
+  .profile-box .profile-boxes-box .deliveries-box .personal-info-bottom {
+    margin-top: 0;
+  }
+  .profile-box .profile-boxes-box .discount-box {
+    display: none;
+  }
+  .profile-div .like-and-purchase-box {
+    display: flex;
+    flex-direction: column;
+    width: 92vw;
+    margin-bottom: 80px;
+  }
+  .profile-div .like-and-purchase-box .like-and-purchase-item {
+    width: 100%;
+    margin: 5px 0 5px 0;
+  }
+  .profile-div .like-and-purchase-box .log-out {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    height: 40px;
+  }
+  .profile-div .like-and-purchase-box .like-and-purchase-item:hover {
+    box-shadow: rgb(240, 237, 237) 0px 2px 5px 5px;
+  }
+}

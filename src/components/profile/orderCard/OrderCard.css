@@ -1,0 +1,84 @@
+.order-card-div {
+  width: 90%;
+  /* z-index: 10; */
+  overflow: hidden;
+}
+.order-card-div .order-card-describe {
+  /* z-index: 10; */
+  background-color: rgb(246, 240, 240);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgb(208, 193, 193);
+
+  width: 95%;
+  height: 8vh;
+  cursor: pointer;
+  margin-bottom: 0px;
+  padding: 10px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+.order-card-div .order-card-describe .narrative {
+  font-weight: 600;
+  color: gray;
+}
+.order-card-div .order-card-describe .info {
+  color: gray;
+  font-weight: 500;
+}
+
+.order-card-div .order-card-list-box {
+  width: 95%;
+  overflow: hidden;
+  border: 1px solid rgb(247, 243, 243);
+  /* display: none; */
+
+  transition: all 0.5s ease;
+}
+.some-parent {
+  width: 100%;
+  overflow: hidden;
+}
+.order-card-div .order-card-list {
+  /* display: none; */
+  max-height: 60vh;
+  overflow: auto;
+  white-space: nowrap;
+  width: 100%;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+  /* z-index: 1; */
+}
+.order-card-div .order-card-list::-webkit-scrollbar {
+  display: none;
+}
+.order-card-div #show {
+  /* z-index: 1; */
+  overflow: hidden;
+  display: inline-block;
+  transition: all 0.5s;
+  animation: toTop 0.5s;
+}
+.order-card-div #hidden {
+  margin-top: -100%;
+  animation: toTopReverse 0.5s;
+}
+
+@keyframes toTop {
+  from {
+    margin-top: -100%;
+  }
+  to {
+    margin-top: 0%;
+  }
+}
+@keyframes toTopReverse {
+  from {
+    margin-top: 0%;
+  }
+  to {
+    margin-top: -100%;
+  }
+}

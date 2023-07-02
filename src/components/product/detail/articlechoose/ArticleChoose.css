@@ -1,0 +1,30 @@
+.article-choose-div {
+  display: flex;
+  flex-direction: row;
+  padding-left: 1rem;
+  width: 30hw;
+}
+.article-choose-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 0.5vw;
+}
+.article-choose-wrapper img {
+  width: 6rem;
+  height: 8rem;
+  border-radius: 5px;
+  object-fit: contain;
+  border-radius: 5px;
+}
+.article-choose-wrapper img:hover {
+  border: 1px solid rgb(157, 79, 230);
+}
+@media only screen and (max-width: 600px) {
+  .article-choose-div {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    overflow-x: scroll;
+  }
+}

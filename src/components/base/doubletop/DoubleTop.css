@@ -1,0 +1,20 @@
+.doubletop-box{
+    display: flex;
+}
+.doubletop-text{
+    /* position: absolute;
+width: 84px;
+height: 28px;
+left: 100px;
+top: 20px; */
+
+font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 28px;
+/* identical to box height */
+margin-left: 5%;
+
+color: #A4A4A4;
+}

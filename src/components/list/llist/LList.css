@@ -1,0 +1,7 @@
+.l-list-div {
+}
+.l-list-div .l-list-box {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
