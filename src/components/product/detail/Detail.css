@@ -295,7 +295,7 @@
     flex-direction: row;
     width: 100%;
     margin-right: 0px !important;
-    height: 60vh;
+    height: 80vh;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
@@ -350,6 +350,9 @@
     display: flex;
     position: absolute;
     border: none;
+  }
+  .price {
+    font-size: 18px !important;
   }
   .small-screen-like .like-button-box button {
     background-color: transparent;

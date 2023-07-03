@@ -1,6 +1,7 @@
 export interface Inventory {
   id: number;
   price: number;
+  originalPrice?: number;
   quantity: number;
   inStock: boolean;
   size: string;

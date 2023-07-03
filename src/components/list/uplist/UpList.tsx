@@ -20,7 +20,7 @@ const UpList: React.FC<listOfArticles> = ({
         {articles ? (
           articles.map((article, index) => {
             return (
-              <ProductUp {...article} />
+              <ProductUp {...article} key={index} />
               // <div
               //   onClick={() => {
               //     if (func) {

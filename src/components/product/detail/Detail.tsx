@@ -210,7 +210,8 @@ const Detail = () => {
             <div className="detail-page-pic">
               <div className="pic-box">
                 {article?.pictures
-                  ? article?.pictures.map((pic, index) => {
+                  ? // ? article?.pictures.map((pic, index) => {
+                    [1, 2, 3, 4, 5, 6].map((pic, index) => {
                       return (
                         <img
                           src={"/product.jpg"}
@@ -253,8 +254,9 @@ const Detail = () => {
                         : ""}
                     </ins>
                     <del className="old-price">
-                      {article.inventories && article?.inventories[0].price
-                        ? article.inventories[0].price
+                      {article.inventories &&
+                      article?.inventories[0].originalPrice
+                        ? article.inventories[0].originalPrice
                         : ""}
                     </del>
                   </div>
@@ -265,11 +267,12 @@ const Detail = () => {
                     </span>
                   </div>
 
-                  <div className="composition">
-                    color:{" "}
-                    <span>{article && article.color ? article.color : ""}</span>
-                  </div>
-                  {/* <div>
+                  {article && article.color && article.color != null && (
+                    <div className="composition">
+                      color: <span>{article.color}</span>
+                    </div>
+                  )}
+                  <div>
                     {article.product_id ? (
                       <ArticleChoose
                         product_id={article.product_id}
@@ -278,7 +281,7 @@ const Detail = () => {
                     ) : (
                       ""
                     )}
-                  </div> */}
+                  </div>
                   {article.inventories.length > 1 &&
                     article.inventories[0].size.length > 0 && (
                       <div className="size-div">
@@ -325,7 +328,11 @@ const Detail = () => {
               </div>
             </div>
           </div>
-          {/* {article ? <Similar id={article?.id} func={onArticleChangeHandle} /> : ""} */}
+          {article ? (
+            <Similar id={article?.product_id} func={onArticleChangeHandle} />
+          ) : (
+            ""
+          )}
         </div>
       ) : (
         <CircleM />

@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./ArticleChoose.css";
 import { Article } from "../../../../extra/types/Article";
-import { Product } from "../../../../extra/types/Product";
-import axios from "axios";
-import { useAppSelector } from "../../../../store/hooks";
-import { url } from "../../../../extra/axios";
+import Axios, { url } from "../../../../extra/axios";
 
 type ArticleChooseProp = {
   product_id: number | null;
@@ -13,35 +10,15 @@ type ArticleChooseProp = {
 
 const ArticleChoose = ({ product_id, func }: ArticleChooseProp) => {
   const [articles, setArticles] = useState<Article[]>();
+  let axios = Axios();
 
-  const access_token = useAppSelector((state) => state.token.access_token);
-
-  ///////////////////
-  let custom_headers = access_token
-    ? { Authorization: String("Bearer " + access_token) }
-    : { Authorization: String("") };
-
-  const axioss = axios.create({
-    headers: custom_headers,
-    baseURL: "http://localhost:8080/api/product",
-  });
-  ///////////////////
-  console.log("article choose reloading");
   useEffect(() => {
-    console.log(product_id);
+    console.log("product id", product_id);
 
-    axios.get(url + `/api/article/inproduct/${product_id}`).then((res) => {
+    axios.get(url + `/api/article/allow/colors/${product_id}`).then((res) => {
       console.log(res.data);
       setArticles(res.data);
     });
-    // console.log("printing product");
-    // console.log(product?.articles);
-    // console.log("after printing product");
-    // if (product && product.articles) {
-    //   setArticles(product.articles);
-
-    //   console.log(product?.articles);
-    // }
   }, []);
   return (
     <div className="article-choose-div">
