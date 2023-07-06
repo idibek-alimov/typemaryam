@@ -31,7 +31,7 @@ const ProductUp: React.FC<Article> = (article: Article): JSX.Element => {
     >
       <div className="product-up-box">
         <div className="product-up-pic">
-          <img src={"/product.jpg"} alt="tshirt.jpg" />
+          <img src={article.pictures[0]} alt={article.pictures[0]} />
           {article.discount && article.discount != 0 ? (
             <span>-{article.discount}%</span>
           ) : (

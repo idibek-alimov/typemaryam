@@ -211,10 +211,10 @@ const Detail = () => {
               <div className="pic-box">
                 {article?.pictures
                   ? // ? article?.pictures.map((pic, index) => {
-                    [1, 2, 3, 4, 5, 6].map((pic, index) => {
+                    article.pictures.map((pic, index) => {
                       return (
                         <img
-                          src={"/product.jpg"}
+                          src={pic}
                           alt="desert1.jpg"
                           className={activeImage ? "highligt" : ""}
                           id={`pic-${index}`}
@@ -242,7 +242,7 @@ const Detail = () => {
               </div>
               <div className="mainpic-div">
                 <div className="mainpic-box">
-                  <img src={"/product.jpg"} alt="desert.jpg" />
+                  <img src={article.pictures[0]} alt="desert.jpg" />
                 </div>
               </div>
               <div className="detail-left">

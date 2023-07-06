@@ -32,8 +32,9 @@ let commons = {
 };
 //export default ActivateToken();
 //export const url = "https://maryam-backend2.onrender.com";
-export const url = "http://localhost:8080";
+//export const url = "http://localhost:8080";
 //export const url = "https://maryam-backend2.onrender.com";
+export const url = "http://89.223.123.4:8080";
 export default function Axios() {
   const access_token = useAppSelector((state) => state.token.access_token);
   const refresh = RefreshToken();

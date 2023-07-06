@@ -14,10 +14,12 @@
   background-color: aliceblue;
   position: relative;
   width: 100%;
+  height: 250px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  object-fit: cover !important;
 }
 .product-up-div .product-up-box .product-up-pic img {
   width: 100%;

@@ -260,6 +260,7 @@
   .detail-page-box .detail-page-pic {
     width: 100%;
     margin: 0;
+    height: 30vh;
 
     height: max-content;
     min-height: fit-content;
