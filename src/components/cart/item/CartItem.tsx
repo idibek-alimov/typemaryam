@@ -57,7 +57,7 @@ const CartItem: FC<CartArticle> = (article): JSX.Element => {
       {article ? (
         <div className="product-box">
           <div className="image-box">
-            <img src={pic} alt="dsert.jpg" />
+            <img src={article.pictures[0]} alt="dsert.jpg" />
           </div>
 
           <div className="product-right">

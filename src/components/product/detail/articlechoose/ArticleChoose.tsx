@@ -37,7 +37,7 @@ const ArticleChoose = ({ product_id, func }: ArticleChooseProp) => {
                         }
                       }}
                       src={
-                        "/uploads/" + article.pictures[0] //.src.split("/").pop()
+                        article.pictures[0] //.src.split("/").pop()
                       }
                     />
                   </div>

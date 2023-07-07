@@ -260,7 +260,6 @@
   .detail-page-box .detail-page-pic {
     width: 100%;
     margin: 0;
-    height: 30vh;
 
     height: max-content;
     min-height: fit-content;
@@ -296,7 +295,7 @@
     flex-direction: row;
     width: 100%;
     margin-right: 0px !important;
-    height: 80vh;
+    height: 55vh;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;

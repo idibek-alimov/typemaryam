@@ -40,6 +40,7 @@ const Detail = () => {
   const onArticleChangeHandle = (id: number) => {
     if (id != article?.id)
       axios.get(url + `/api/article/allow/${id}`).then((res) => {
+        console.log(res.data);
         setArticle(res.data);
         setMainPic(res.data.pictures[0].src.split("/").pop());
       });
@@ -302,6 +303,7 @@ const Detail = () => {
                                       : ""
                                   }
                                 >
+                                  {s.size}
                                   {chosenInventory ? (
                                     <Size
                                       currentSize={chosenInventory?.size}
@@ -328,11 +330,11 @@ const Detail = () => {
               </div>
             </div>
           </div>
-          {article ? (
+          {/* {article ? (
             <Similar id={article?.product_id} func={onArticleChangeHandle} />
           ) : (
             ""
-          )}
+          )} */}
         </div>
       ) : (
         <CircleM />

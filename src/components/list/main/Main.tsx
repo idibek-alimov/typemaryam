@@ -21,7 +21,7 @@ const ByTag = () => {
   const refresh = RefreshToken();
   useEffect(() => {
     axios
-      .get(url + `/api/article/allow/0/10`)
+      .get(url + `/api/article/allow/0/20`)
       .then((response) => {
         setArticles(response.data);
       })
