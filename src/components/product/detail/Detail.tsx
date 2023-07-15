@@ -15,6 +15,7 @@ import { Picture } from "../../../extra/types/Picture";
 import Axios, { url } from "../../../extra/axios";
 import CircleM from "../../../extra/circlem/CircleM";
 import { Inventory } from "../../../extra/types/Inventory";
+import ImageScroll from "../../tools/imageScroller/ImageScroll";
 
 const Detail = () => {
   const [activeImage, setActiveImage] = useState<Number>();
@@ -233,6 +234,9 @@ const Detail = () => {
                 <div className="small-screen-like">
                   {article?.pictures ? <LikeButton article={article} /> : ""}
                 </div>
+              </div>
+              <div className="mobile-pic-box">
+                {article?.pictures && <ImageScroll {...article.pictures} />}
               </div>
               <div className="pic-navigate-div">
                 {/* <div className="pic-navigate-box">

@@ -23,6 +23,7 @@ const ByTag = () => {
     axios
       .get(url + `/api/article/allow/0/20`)
       .then((response) => {
+        console.log(response);
         setArticles(response.data);
       })
       .catch((err) => {

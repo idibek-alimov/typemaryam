@@ -20,3 +20,15 @@ export interface Article {
 export interface Discount {
   percentage: number;
 }
+export const emptyArticle: Article = {
+  id: 0,
+  likes: false,
+  inventories: [],
+  pictures: [],
+  product_id: 0,
+  name: "",
+  brand: "",
+  description: "",
+  discount: 0,
+  discounts: [],
+};

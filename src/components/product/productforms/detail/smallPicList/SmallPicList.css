@@ -1,0 +1,59 @@
+.small-pic-list-box {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .small-pic-list-box {
+    all: unset;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory !important;
+    scroll-behavior: smooth !important;
+    -webkit-overflow-scrolling: touch !important;
+    background-color: rgb(234, 221, 221);
+  }
+  .small-pic-list-box::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+    display: none;
+    width: 100vw;
+  }
+  .small-pic-list-box::-webkit-scrollbar-thumb {
+    background: rebeccapurple;
+    border-radius: 5px;
+    height: 2px;
+  }
+  .small-pic-list-box::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .small-pic-list-box .small-pic {
+    width: 100% !important;
+    object-fit: cover !important;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    transform-origin: center;
+    height: 100%;
+  }
+
+  .small-pic-top-property {
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .small-pic-top-property .property-box {
+    width: 45%;
+    cursor: pointer;
+  }
+  .small-pic-top-property .like-box {
+    text-align: end;
+  }
+}

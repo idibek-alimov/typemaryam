@@ -16,8 +16,7 @@ interface PriceAmountProps {
 const CartList = () => {
   const cartProducts = useAppSelector((state) => state.cart.cart_products);
   const credentials = useAppSelector((state) => state.user);
-  // const [totalPrice, setTotalPrice] = useState<number>(0);
-  // const [totalAmount, setTotalAmount] = useState<number>(0);
+
   const [priceAndAmount, setPriceAndAmount] = useState<PriceAmountProps>();
   const ref = useRef<HTMLDivElement>(null);
   const isVisible = useOnScreen(ref);
@@ -100,7 +99,8 @@ const CartList = () => {
     );
   };
   /////////////////////////////////////////////////////////
-  const [address, setAddress] = useState<string>(credentials.address);
+  let [address, setAddress] = useState(credentials.address);
+  let adres = credentials.address;
   const AddressCheck = () => {
     return (
       <div
@@ -110,10 +110,13 @@ const CartList = () => {
         <div className="change-name-text">{"Is this your address"}</div>
         <div className="change-name-input-box">
           <span>{"if not you should change it"}</span>
+
           <input
-            value={address}
+            value={adres}
             onChange={(event) => {
-              setAddress(event.target.value);
+              // event.preventDefault();
+              //setAddress(event.currentTarget.value);
+              adres = event.target.value;
             }}
           />
         </div>

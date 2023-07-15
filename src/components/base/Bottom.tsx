@@ -13,7 +13,7 @@ const Bottom = () => {
   const access_token = useAppSelector((state) => state.token.access_token);
   return (
     <div className="bottom">
-      <div className="bottom-big-screen">bottom big</div>
+      {/* <div className="bottom-big-screen">bottom big</div> */}
       <div className="bottom-small-screen">
         <div
           className="bottom-small-item"

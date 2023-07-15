@@ -1,0 +1,27 @@
+.size-list-box {
+  margin: 10px 0 0 0;
+}
+.size-list-box .size-list-text {
+  color: gray;
+  border-bottom: 1px dashed gray;
+  width: fit-content;
+}
+.size-list-box .size-list-item-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  gap: 20px;
+}
+.size-list-box .size-list-item-wrapper .size-box {
+  box-shadow: 0 0 3px 3px rgb(238, 233, 233);
+  min-width: fit-content;
+  width: 40px !important;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.size-list-box .size-list-item-wrapper #chosen-size {
+  border: 1px solid blueviolet;
+}

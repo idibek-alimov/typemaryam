@@ -9,6 +9,7 @@
   justify-content: center;
   position: fixed;
   bottom: 0 !important;
+  display: none;
 }
 .bottom .bottom-big-screen {
   width: 100%;
@@ -18,6 +19,9 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .bottom {
+    display: flex;
+  }
   .bottom-big-screen {
     display: none;
   }

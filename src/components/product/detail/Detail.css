@@ -53,6 +53,9 @@
   height: fit-content;
   width: 6rem;
 }
+.detail-page-box .detail-page-pic .mobile-pic-box {
+  display: none;
+}
 .detail-page-box .detail-page-pic .pic-box .single-img-box {
   width: 6rem !important;
   height: fit-content !important;
@@ -301,6 +304,7 @@
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
     background-color: white;
+    display: none;
   }
   .detail-page-box .detail-page-pic .pic-box::-webkit-scrollbar {
     width: 10px;
