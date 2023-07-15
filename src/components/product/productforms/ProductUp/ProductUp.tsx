@@ -29,7 +29,7 @@ const ProductUp: React.FC<Article> = (article: Article): JSX.Element => {
       className="product-up-div"
       onClick={() => {
         navigate(`/detail/${article.id}`);
-        window.location.reload();
+        // window.location.reload();
       }}
     >
       <div className="product-up-box">
