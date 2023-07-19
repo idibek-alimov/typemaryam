@@ -1,6 +1,6 @@
 .cart-item-box {
   box-shadow: 0 0 5px 5px rgb(232, 223, 223);
-  width: 94%;
+  width: 94% !important;
   border-radius: 5px;
 }
 .cart-item-box .top {

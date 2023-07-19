@@ -4,7 +4,7 @@ import CartList from "./CartList";
 
 const CartWrapper = () => {
   return (
-    <div>
+    <div style={{ width: "100%" }}>
       <Routes>
         <Route path="/" element={<CartList />} />
       </Routes>

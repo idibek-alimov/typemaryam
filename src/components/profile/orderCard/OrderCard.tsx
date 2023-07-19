@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./OrderCard.css";
 import { CartArticle } from "../../../store/features/cart/cartSlice";
-import ItemCard from "../itemCard/ItemCard";
+//import ItemCard from "../itemCard/ItemCard";
 import Cart from "../../base/cart/Cart";
 import { Article } from "../../../extra/types/Article";
 import { Link } from "react-router-dom";
@@ -64,7 +64,7 @@ const OrderCard: React.FC<Order> = ({
                   return (
                     <div>
                       <Link to={`/detail/${item.article.id}`}>
-                        <ItemCard {...item.article} />
+                        {/* <ItemCard {...item.article} /> */}
                       </Link>
                     </div>
                   );
@@ -77,4 +77,4 @@ const OrderCard: React.FC<Order> = ({
   );
 };
 
-export default OrderCard;
+//export default OrderCard;

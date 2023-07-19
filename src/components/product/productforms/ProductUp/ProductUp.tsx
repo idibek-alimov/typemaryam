@@ -9,19 +9,10 @@ interface Props {
 
 const ProductUp: React.FC<Article> = (article: Article): JSX.Element => {
   let navigate = useNavigate();
-  //const [article, setArticle] = useState<Article>();
   const [pic, setPic] = useState<string>();
   useEffect(() => {
-    // if (product) {
-    //   setArticle(product.articles[0]);
-    //   if (product.articles[0] && product.articles[0].pictures[0]) {
-    //     setPic(product.articles[0].pictures[0].src.split("/").pop());
-    //   }
-    // }
-    //setArticle(article);
     if (article.pictures && article.pictures[0]) {
       setPic(article.pictures[0]);
-      //setPic(article.pictures[0].src.split("/").pop());
     }
   }, []);
   return (
@@ -29,7 +20,6 @@ const ProductUp: React.FC<Article> = (article: Article): JSX.Element => {
       className="product-up-div"
       onClick={() => {
         navigate(`/detail/${article.id}`);
-        // window.location.reload();
       }}
     >
       <div className="product-up-box">

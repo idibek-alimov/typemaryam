@@ -5,6 +5,7 @@ import Axios, { url } from "../../../extra/axios";
 import { Article } from "../../../extra/types/Article";
 import UpList from "../../list/uplist/UpList";
 import CircleM from "../../../extra/circlem/CircleM";
+import ItemCard from "../itemCard/ItemCard";
 const Deliveries = () => {
   const [deliveryArticles, setDeliveryArticles] = useState<Article[]>();
 
@@ -14,17 +15,21 @@ const Deliveries = () => {
     axios
       .get(url + "/api/item/user/delivery")
       .then((res) => {
-        console.log(res.data);
-        let articleList: Article[] = [];
+        console.log("delivery data", res.data);
         setDeliveryArticles(res.data);
       })
       .catch((err) => console.log(err));
   }, []);
   if (deliveryArticles?.length != 0) {
     return (
-      <div>
+      <div className="deliveries-box">
+        <div style={{ fontSize: 20, fontWeight: 600 }}>Deliveries</div>
         {deliveryArticles ? (
-          <UpList articles={deliveryArticles} />
+          <div className="deliveries-wrapper">
+            {deliveryArticles.map((item, index) => (
+              <ItemCard {...item} key={index} />
+            ))}
+          </div>
         ) : (
           <CircleM />
         )}

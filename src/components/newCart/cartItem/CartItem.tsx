@@ -11,14 +11,15 @@ const CartItem = (cartArticle: CartArticle) => {
 
   const onChangeAmountHandle = (crease: string) => {
     if (crease === "increase" && cartArticle.amount) {
-      dispatch(
-        changeAmount({
-          id: cartArticle.id,
-          inventoryId: cartArticle.inventory.id,
-          size: cartArticle.inventory,
-          amount: cartArticle.amount + 1,
-        })
-      );
+      if (cartArticle.inventory.quantity > cartArticle.amount)
+        dispatch(
+          changeAmount({
+            id: cartArticle.id,
+            inventoryId: cartArticle.inventory.id,
+            size: cartArticle.inventory,
+            amount: cartArticle.amount + 1,
+          })
+        );
       //   setAmount(amount + 1);
     } else if (
       crease === "decrease" &&

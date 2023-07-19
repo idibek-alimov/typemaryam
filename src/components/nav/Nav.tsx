@@ -17,7 +17,13 @@ import CartWrapper from "../newCart/CartWrapper";
 const Nav = () => {
   const product = useAppSelector((state) => state.stageone);
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
+    >
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/detail/:id/" element={<DetailWrapper />} />

@@ -13,7 +13,8 @@
   gap: 20px;
 }
 .size-list-box .size-list-item-wrapper .size-box {
-  box-shadow: 0 0 3px 3px rgb(238, 233, 233);
+  /* box-shadow: 0 0 3px 3px rgb(238, 233, 233); */
+  border: 1px solid gray;
   min-width: fit-content;
   width: 40px !important;
   height: 30px;

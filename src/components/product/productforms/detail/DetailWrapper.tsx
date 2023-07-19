@@ -34,7 +34,6 @@ const DetailWrapper = () => {
         axios
           .get(url + `/api/article/allow/category/${res.data.product_id}`)
           .then((response) => {
-            console.log("response detail wrapper", response);
             setArticles(response.data);
           })
           .catch((err) => {

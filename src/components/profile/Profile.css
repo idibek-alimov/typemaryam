@@ -235,6 +235,8 @@
     height: 35vh;
     width: 100%;
   }
+  .profile-box .deliveries-box {
+  }
   .profile-box .profile-boxes-box .profile-shadow-hover {
     display: flex;
     height: 16vh;

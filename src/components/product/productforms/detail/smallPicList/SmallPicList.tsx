@@ -54,7 +54,7 @@ const SmallPicList = () => {
         </div>
         <div></div>
       </div>
-      <div className="small-pic-list-box" onScroll={(e) => console.log(e)}>
+      <div className="small-pic-list-box" >
         {article.pictures.map((pic, index) => (
           <img
             src={pic}

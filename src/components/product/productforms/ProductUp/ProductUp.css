@@ -77,12 +77,13 @@
 @media only screen and (max-width: 600px) {
   .product-up-div {
     flex: 1 1 40%;
-    width: 40vw !important;
+    width: 40% !important;
     margin: 2px;
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 50%;
+    height: 280px;
   }
   .product-up-div .product-up-box {
     width: 90% !important;
@@ -90,5 +91,7 @@
   }
   .product-up-div .product-up-box .product-up-pic {
     width: 100%;
+    object-fit: contain;
+    max-width: 40vw;
   }
 }

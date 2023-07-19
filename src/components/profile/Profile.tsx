@@ -72,9 +72,9 @@ const Profile = () => {
               <span className="delivery-text">Delivery</span>
             </div>
             <div className="personal-info-bottom">
-              <span className="next">
+              {/* <span className="next">
                 Next <span className="time">not planned</span>
-              </span>
+              </span> */}
             </div>
           </div>
           <div className="discount-box profile-shadow-hover">

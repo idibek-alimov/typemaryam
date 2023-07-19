@@ -3,15 +3,17 @@ import "./SizeList.css";
 import { useGlobalContext } from "../DetailContext";
 import { ExtraActionsKind } from "../detailReducer";
 interface SizeProp {
+  inStock: boolean;
   size: string;
   id: number;
 }
 function SizeList() {
   let { article, extra, extraDispatch } = useGlobalContext();
-  const Size = ({ size, id }: SizeProp) => {
+  const Size = ({ size, id, inStock }: SizeProp) => {
     return (
       <div
         className="size-box"
+        style={inStock ? {} : { borderColor: "lightgray", color: "lightgray" }}
         id={
           extra?.chosenInventory && extra?.chosenInventory.id === id
             ? "chosen-size"
@@ -32,14 +34,14 @@ function SizeList() {
               <div
                 key={index}
                 onClick={() => {
-                  extraDispatch({
-                    type: ExtraActionsKind.ADD_INVENTORY,
-                    payload: item,
-                  });
-                  console.log("extra", extra);
+                  if (item.inStock)
+                    extraDispatch({
+                      type: ExtraActionsKind.ADD_INVENTORY,
+                      payload: item,
+                    });
                 }}
               >
-                <Size size={item.size} id={item.id} />
+                <Size size={item.size} id={item.id} inStock={item.inStock} />
               </div>
             );
           })}

@@ -8,7 +8,14 @@ import Liked from "./liked/Liked";
 
 const ProfileWrapper = () => {
   return (
-    <div>
+    <div
+      style={{
+        width: "100%",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
+    >
       <Routes>
         <Route path="/" element={<Profile />} />
         <Route path="detail/" element={<ProfileDetail />} />

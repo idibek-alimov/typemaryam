@@ -51,7 +51,7 @@ const CartList = () => {
           })
           .then((res) => {
             console.log("response from order", res);
-            dispatch(clearTheCart());
+            // dispatch(clearTheCart());
           })
           .catch((err) => console.log("error from order", err));
       }
